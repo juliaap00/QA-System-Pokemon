@@ -1,0 +1,78 @@
+N Pokedex
+	¿Que número de la pokedex es #pokemon#?
+	¿Que entrada es #pokemon# en la pokedex?
+	¿Como se indetifica a #pokemon#?
+
+Descripcion
+	¿Cual es la descripción de #pokemon#?
+	¿Como es #pokemon#?
+	¿Como describirias a #pokemon#?
+
+Tipo
+	¿De que tipo es #pokemon#?
+	¿Con que hace mas daño #pokemon#?
+	¿Que movimientos potencia #pokemon#?
+
+Debilidades
+	¿A que es debil #pokemon#?
+	¿Que le hace mucho daño a #pokemon#?
+	¿Que tiene que evitar #pokemon#?
+
+Peso
+	¿Cuanto pesa #pokemon#?
+	¿Como de pesado es #pokemon#?
+
+Altura
+	¿Cuanto mide #pokemon#?
+	¿Como de alto es #pokemon#?
+	¿Como de grande es #pokemon#?
+
+Lgendario
+	¿Es #pokemon# legendario?
+	¿Es #pokemon# especial?
+	¿Es #pokemon# único?
+
+Habilidades
+	¿Que habilidades tiene #pokemon#?
+	¿Que características tiene #pokemon#?
+
+Habilidades ocultas
+	¿Que habilidades ocultas tiene #pokemon#?
+	¿Tiene habilidades especiales #pokemon#?
+	¿#pokemon# tiene habilidades dificiles de conseguir?
+
+Generación
+	¿En que generación apareción #pokemon#?
+	¿Cuando se vio por primera vez a #pokemon#?
+	¿Cuando se creó #pokemon#?
+	¿En que juego aparecía #pokemon#?
+
+Habitat
+	¿Cual es el habitat de #pokemon#?
+	¿Donde vive #pokemon#?
+	¿Donde nace #pokemon#?
+	¿En que lugar vive #pokemon#?
+
+Cadena evolutiva
+	¿Cual es la cadena evolutiva de #pokemon#?
+	¿Cual es la evolución #pokemon#?
+	¿Cuales son las evoluciones de #pokemon#?
+	¿Cuales son las preevoluciones de #pokemon#?
+	¿#pokemon# evoluciona?
+
+Obtencion
+	¿Como se obtiene a #pokemon#?
+	¿Como/Donde se consigue a #pokemon#?
+	¿Como/Donde se captura a #pokemon#?
+
+Ratio de Captura
+	¿Cual es el ratio de captura de #pokemon#?
+	¿Es facil capturar a #pokemon#?
+	¿Es complicado capturar a #pokemon#?
+	¿Como de probable es capturar a #pokemon#?
+
+Movimientos
+	¿Que movimientos aprende #pokemon#?
+	¿Que aprende #pokemon#?
+	¿Que ataques puede hacer #pokemon#?
+	¿Con que puede atacar #pokemon#?
