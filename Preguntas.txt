@@ -2,6 +2,8 @@ N Pokedex
 	¿Que número de la pokedex es #pokemon#?
 	¿Que entrada es #pokemon# en la pokedex?
 	¿Como se indetifica a #pokemon#?
+	¿Cual es el indetificador a #pokemon#?
+	¿En que pagina esta #pokemon#?
 
 Descripcion
 	¿Cual es la descripción de #pokemon#?
@@ -12,11 +14,14 @@ Tipo
 	¿De que tipo es #pokemon#?
 	¿Con que hace mas daño #pokemon#?
 	¿Que movimientos potencia #pokemon#?
+	¿Con que pega más #pokemon#?
 
 Debilidades
 	¿A que es debil #pokemon#?
 	¿Que le hace mucho daño a #pokemon#?
 	¿Que tiene que evitar #pokemon#?
+	¿Que debilita/hiere #pokemon#?
+	¿Que le afecta a #pokemon#?
 
 Peso
 	¿Cuanto pesa #pokemon#?
@@ -27,14 +32,16 @@ Altura
 	¿Como de alto es #pokemon#?
 	¿Como de grande es #pokemon#?
 
-Lgendario
+Legendario
 	¿Es #pokemon# legendario?
 	¿Es #pokemon# especial?
 	¿Es #pokemon# único?
+	¿#pokemon# proviene de la mitología?
 
 Habilidades
 	¿Que habilidades tiene #pokemon#?
 	¿Que características tiene #pokemon#?
+	¿Que pasiva tiene #pokemon#?
 
 Habilidades ocultas
 	¿Que habilidades ocultas tiene #pokemon#?
