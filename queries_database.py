@@ -10,3 +10,4 @@ for key, value in queries_df.items():
 	query = value['Preguntas'].split(',')
 	queries_dict[key] = query
 	parameter_list.append(key)
+print(parameter_list)
