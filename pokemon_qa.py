@@ -25,13 +25,15 @@ def define_parameter_asked(query):
 			if similarity_aux > similarity:
 				similarity = similarity_aux
 				parameter_asked = parameter
-	print(similarity)
+
+	print("La similaridad de la pregunta con el parámetro escogido", parameter_asked, "es:", similarity)
 	return parameter_asked
 
 def get_pokemon(question):
-    for word in question.split():
-        if word in pokemons:
-            return word
+	tmp = question.replace('¿', '').replace('?', '').replace(',', '').replace('.', '')
+	for word in tmp.split():
+		if word in pokemons:
+			return word
 
 def get_answer(parameter_asked, pokemon):
 	if parameter_asked == 'Ratio_de_Captura':
@@ -47,7 +49,7 @@ def get_answer(parameter_asked, pokemon):
 def get_elaborated_answer(parameter_asked, pokemon):
 	if parameter_asked == 'N_Pokedex':
 		simply_answer = get_answer(parameter_asked, pokemon)
-		return f"El número de la Pokédex del pokemon {pokemon} es {simply_answer}."
+		return f"El número de la Pokedex del pokemon {pokemon} es {simply_answer}."
 	if parameter_asked == 'Descripcion':
 		simply_answer = get_answer(parameter_asked, pokemon)
 		return f"La descripción del pokemon {pokemon} es {simply_answer}."
@@ -101,7 +103,7 @@ def qa(query):
 	print(query)
 	if query.lower() == '--help':
 		return"""La información disponible para cada pokemon es la siguiente:
-			1.Numero Pokedex. Por ej. ¿Qué Número de la Pokédex es Charizard?
+			1.Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?
 			2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?
 			3.Tipo. Por ej. ¿De qué tipo es Charizard?
 			4.Debilidades. Por ej. ¿A que es débil Charizard? 
@@ -121,7 +123,7 @@ def qa(query):
 		#remove puntcuation
 		pokemon = get_pokemon(query)
 		if pokemon != None:
-			print(f"El Pokémon preguntado es {pokemon}")
+			print(f"El pokemon preguntado es {pokemon}")
 			print(parameter_list)
 			#POKEMON si esta en mayus se pasa a minus
 			#Procesar texto
@@ -131,4 +133,4 @@ def qa(query):
 			return get_elaborated_answer(parameter, pokemon)
 
 		else:
-			return f"El Pokémon {pokemon} no se encuentra en la base de datos."
+			return f"El pokemon {pokemon} no se encuentra en la base de datos."

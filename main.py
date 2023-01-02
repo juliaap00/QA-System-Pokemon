@@ -25,13 +25,15 @@ def define_parameter_asked(query):
 			if similarity_aux > similarity:
 				similarity = similarity_aux
 				parameter_asked = parameter
-	print(similarity)
+
+	print("La similaridad de la pregunta con el parámetro escogido", parameter_asked, "es:", similarity)
 	return parameter_asked
 
 def get_pokemon(question):
-    for word in question.split():
-        if word in pokemons:
-            return word
+	tmp = question.replace('¿', '').replace('?', '').replace(',', '').replace('.', '')
+	for word in tmp.split():
+		if word in pokemons:
+			return word
 
 def get_answer(parameter_asked, pokemon):
 	if parameter_asked == 'Ratio_de_Captura':
@@ -47,7 +49,7 @@ def get_answer(parameter_asked, pokemon):
 def get_elaborated_answer(parameter_asked, pokemon):
 	if parameter_asked == 'N_Pokedex':
 		simply_answer = get_answer(parameter_asked, pokemon)
-		return f"El número de la Pokédex del pokemon {pokemon} es {simply_answer}."
+		return f"El número de la Pokedex del pokemon {pokemon} es {simply_answer}."
 	if parameter_asked == 'Descripcion':
 		simply_answer = get_answer(parameter_asked, pokemon)
 		return f"La descripción del pokemon {pokemon} es {simply_answer}."
@@ -94,34 +96,36 @@ def get_elaborated_answer(parameter_asked, pokemon):
 
 
 while(True):
-	query = input('Introduca una pregunta sobre Pokemon \n Para ver la información o pregunta aceptadas introduzca --help.\n >>>')
-#DEBILIDAD -> QUE TIPO HACE MAS DAÑO A POKEMON
+	print()
+	query = input('Introduzca una pregunta sobre pokemon \nPara ver la información o pregunta aceptadas introduzca --help.\n>>>')
+	#DEBILIDAD -> QUE TIPO HACE MAS DAÑO A POKEMON
 	#query = "Que ataques aprende Psyduck"
 	query = query.lower()
 	print(query)
+	print()
 	if query.lower() == '--help':
-		print("""La información disponible para cada pokemon es la siguiente:
-			1.Numero Pokedex. Por ej. ¿Qué Número de la Pokédex es Charizard?
-			2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?
-			3.Tipo. Por ej. ¿De qué tipo es Charizard?
-			4.Debilidades. Por ej. ¿A que es débil Charizard? 
-			5.Peso. Por ej. ¿Cuánto pesa Charizard?
-			6.Altura. Por ej. ¿Cuánto mide Charizard?
-			7.Legendario. Por ej. ¿Es Charizard legendario?
-			8.Habilidades. Por ej. ¿Qué habilidades tiene Charizard?
-			9.Habilidades Ocultas. Por ej. ¿Qué habilidades ocultas tiene Charizard?
-			10.Generación. Por ej. ¿En qué generación apareció Charizard?
-			11.Hábitat. Por ej. ¿Cuál es el hábitat de Charizard?
-			13.Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?
-			14.Obtención. Por ej. ¿Cómo se obtiene a Charizard?
-			15.Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?
-			16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?""")
+		print("""La información disponible para cada pokemon es la siguiente:""")
+		print("""	1.Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?)""")
+		print("""	2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?""")
+		print("""	3.Tipo. Por ej. ¿De qué tipo es Charizard?""")
+		print("""	4.Debilidades. Por ej. ¿A que es débil Charizard? """)
+		print("""	5.Peso. Por ej. ¿Cuánto pesa Charizard?""")
+		print("""	6.Altura. Por ej. ¿Cuánto mide Charizard?""")
+		print("""	7.Legendario. Por ej. ¿Es Charizard legendario?""")
+		print("""	8.Habilidades. Por ej. ¿Qué habilidades tiene Charizard?""")
+		print("""	9.Habilidades Ocultas. Por ej. ¿Qué habilidades ocultas tiene Charizard?""")
+		print("""	10.Generación. Por ej. ¿En qué generación apareció Charizard?""")
+		print("""	11.Hábitat. Por ej. ¿Cuál es el hábitat de Charizard?""")
+		print("""	13.Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?""")
+		print("""	14.Obtención. Por ej. ¿Cómo se obtiene a Charizard?""")
+		print("""	15.Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?""")
+		print("""	16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?""")
 	else:
 		#remove puntcuation
 		pokemon = get_pokemon(query)
 		if pokemon != None:
-			print(f"El Pokémon preguntado es {pokemon}")
-			print(parameter_list)
+			print(f"El pokemon preguntado es {pokemon}")
+			#print(parameter_list)
 			#POKEMON si esta en mayus se pasa a minus
 			#Procesar texto
 			#Hacer respuestas medianamnte coherentes
@@ -130,4 +134,6 @@ while(True):
 			print(get_elaborated_answer(parameter, pokemon))
 
 		else:
-			print(f"El Pokémon {pokemon} no se encuentra en la base de datos.")
+			print(f"El pokemon {pokemon} no se encuentra en la base de datos.")
+	print()
+	print("----------------------------------------------------------------------------------------")
