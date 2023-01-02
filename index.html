@@ -24,20 +24,20 @@
         border-radius: 50%;
         bottom:0;
         border: 0;
-        width: 10%; 
-        height: 40%; 
+        width: fit-content;
+    		height: 60;
         float: left;
          
       }
       .input-div {
-        width: 40%; 
-        height: 25%; 
         border: 2px solid black; 
         border-radius: 8px; 
         background-color:white;  
         margin: auto;
-        margin-top: 20%;
+        margin-top: 10%;
         position: relative;
+        width: fit-content; 
+      	height: fit-content;
       }
       .blue-subdiv{
         width: 100%;
@@ -60,12 +60,16 @@
       line-height: 1.5;
       margin: 20px 0;
       }
+      ul {
+    		list-style: none;
+			}
 
       form {
       max-width: 500px;
       margin: 0 auto;
       display: flex;
       align-items: center;
+      margin-bottom: 10%;
       }
 
       input[type="text"] {
@@ -95,58 +99,99 @@
       border-radius: 8px;
       padding: 20px;
       background-color:white;
-      display: none;
-      width: 40%; 
-      height: 25%; 
       border-left: 20px solid #004771;
       border-right: 20px solid #004771;
       border-radius: 8px; 
       margin-top: 10%;  
-      margin-left: 30%; 
+      margin-bottom	: 10%; 
+      display: none;
+      width: fit-content; 
+      height: fit-content;
+      justify-content: center;
+      margin-left	: 10%;
+      margin-right: 10%;
+      position: relative;
+
+
       }
 
     </style>
-    <meta charset="UTF-8">
-    <title style="color: white;">Pokémon QA</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title style="color: white;">Pok&eacute;mon QA</title>
   </head>
   <body>
     <div class="top-fringe" >
-    <h1>Pokémon QA</h1>
+    <h1>Pok&eacute;mon QA</h1>
   </div>
    <div class="input-div">
       <div class="blue-subdiv">
         <img src="http://www.pngmart.com/files/2/Pokeball-PNG-Image.png" class="pokemon-ball"  alt="My Image">  
-        <p style="color: white ; float:  center">Introduzca una pregunta sobre un pokemon </p>
+        <p style="color: white ; float:  center">Introduzca una pregunta sobre un Pok&eacute;mon </p>
       </div>
       <div style=" margin-top:  25%; width:   100%; height: 100%"> 
-      <p style="margin-left:5%;">Para ver la información o pregunta aceptadas introduzca --help.</p>
-          <form style="width: 90%; height: 25%; width: fit-content; height: fit-content";>
-            <input style="width: fit-content; height: fit-content;" type="text" id="pokemon-input" />
-            <button class="button" style="width: fit-content; height: fit-content"; type="text" id="pokemon-input" onclick="sendRequest()">Preguntar</button>
+      <p style="margin-left:5%;">Para ver la informaci&oacute;n o pregunta aceptadas introduzca --help.</p>
+         <form style="width: 90%; height: 25%; width: fit-content; height: fit-content;" onsubmit="return false">
+            <input style="width: fit-content; height: fit-content;" type="text" id="pokemon-input" name="question"/>
+            <button onclick="sendRequest()" class="button" style="width: fit-content; height: fit-content"; type="text" id="pokemon-button">Preguntar</button>
           </form>
       </div>
   </div>
-     <div id="response">
-      <p>{{ answer }}</p>
-  </div>
+    <div id="response">
+      <p></p>
+    </div>
+
     
     <script>
   function sendRequest() {
         // Get the value of the input field
         var question = document.getElementById('pokemon-input').value;
         console.log(question)
-        /*
+        
         // Send a GET request to the server with the `pokemon` query parameter
+        
+        
         var xhr = new XMLHttpRequest();
         xhr.onload = function() {
+
           // Update the response element with the server's response
-          document.getElementById('response').innerHTML = this.responseText;
-          console.log(this.responseText)
+          if (document.getElementById('pokemon-input').value == "--help"){
+          	 var list = parseStringToList(this.responseText, document.getElementById('response'));
+					
+          	}else {
+          		document.getElementById('response').innerHTML = this.responseText;
+          	}
+         
+          var div = document.getElementById('response');
+    			div.style.display = 'block';
+    			div.style.left = '40%';
+    			div.style.top = '10%';
+    			div.style.transform = 'translate(-50%, -50%)';
         }
-        xhr.open('GET', '/question?question=' + question);
+        
+    		xhr.open('GET', 'http://127.0.0.1:5000/question?question=' + question);
         xhr.send();
-    */
       }
+
+
+	     function parseStringToList(string, targetElement) {
+    // Split the string into an array of items
+    var items = string.split('\n');
+    console.log(items)
+    // Create a new <ul> element
+    var list = document.createElement('ul');
+    // Iterate over the items in the array
+    for (var i = 1; i < items.length; i++) {
+        // Create a new <li> element for each item
+        var item = document.createElement('li');
+        // Set the text content of the <li> element to the current item in the array
+        item.textContent = items[i];
+        // Append the <li> element to the <ul> element
+        list.appendChild(item);
+    }
+    // Append the <ul> element to the target element
+    targetElement.appendChild(list);
+}
+
     </script>
   </body>
 </html>

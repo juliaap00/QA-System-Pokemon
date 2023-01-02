@@ -103,21 +103,22 @@ def qa(query):
 	print(query)
 	if query.lower() == '--help':
 		return"""La información disponible para cada pokemon es la siguiente:
-			1.Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?
-			2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?
-			3.Tipo. Por ej. ¿De qué tipo es Charizard?
-			4.Debilidades. Por ej. ¿A que es débil Charizard? 
-			5.Peso. Por ej. ¿Cuánto pesa Charizard?
-			6.Altura. Por ej. ¿Cuánto mide Charizard?
-			7.Legendario. Por ej. ¿Es Charizard legendario?
-			8.Habilidades. Por ej. ¿Qué habilidades tiene Charizard?
-			9.Habilidades Ocultas. Por ej. ¿Qué habilidades ocultas tiene Charizard?
-			10.Generación. Por ej. ¿En qué generación apareció Charizard?
-			11.Hábitat. Por ej. ¿Cuál es el hábitat de Charizard?
-			13.Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?
-			14.Obtención. Por ej. ¿Cómo se obtiene a Charizard?
-			15.Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?
-			16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?"""
+			Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?
+			Descripción. Por ej. ¿Cuál es la descripción de Charizard?
+			Tipo. Por ej. ¿De qué tipo es Charizard?
+			Debilidades. Por ej. ¿A que es débil Charizard?
+			Peso. Por ej. ¿Cuánto pesa Charizard?
+			Altura. Por ej. ¿Cuánto mide Charizard?
+			Legendario. Por ej. ¿Es Charizard legendario?
+			Habilidades. Por ej. ¿Qué habilidades tiene Charizard?
+			Habilidades Ocultas. Por ej. ¿Qué habilidades ocultas tiene Charizard?
+			Generación. Por ej. ¿En qué generación apareció Charizard?
+			Hábitat. Por ej. ¿Cuál es el hábitat de Charizard?
+			Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?
+			Obtención. Por ej. ¿Cómo se obtiene a Charizard?
+			Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?
+			Movientos. Por ej. ¿Qué movimientos aprende Charizard?
+			"""
 
 	else:
 		#remove puntcuation
