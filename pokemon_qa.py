@@ -93,14 +93,14 @@ def get_elaborated_answer(parameter_asked, pokemon):
 	return 'Lo siento no he podido obtener la respuesta a la pregunta.'
 
 
-while(True):
-	query = input('Introduca una pregunta sobre Pokemon \n Para ver la información o pregunta aceptadas introduzca --help.\n >>>')
+#while(True):
+def qa(query):
 #DEBILIDAD -> QUE TIPO HACE MAS DAÑO A POKEMON
 	#query = "Que ataques aprende Psyduck"
 	query = query.lower()
 	print(query)
 	if query.lower() == '--help':
-		print("""La información disponible para cada pokemon es la siguiente:
+		return"""La información disponible para cada pokemon es la siguiente:
 			1.Numero Pokedex. Por ej. ¿Qué Número de la Pokédex es Charizard?
 			2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?
 			3.Tipo. Por ej. ¿De qué tipo es Charizard?
@@ -115,7 +115,8 @@ while(True):
 			13.Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?
 			14.Obtención. Por ej. ¿Cómo se obtiene a Charizard?
 			15.Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?
-			16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?""")
+			16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?"""
+
 	else:
 		#remove puntcuation
 		pokemon = get_pokemon(query)
@@ -127,7 +128,7 @@ while(True):
 			#Hacer respuestas medianamnte coherentes
 			#Handle errors
 			parameter = define_parameter_asked(query)
-			print(get_elaborated_answer(parameter, pokemon))
+			return get_elaborated_answer(parameter, pokemon)
 
 		else:
-			print(f"El Pokémon {pokemon} no se encuentra en la base de datos.")
+			return f"El Pokémon {pokemon} no se encuentra en la base de datos."
