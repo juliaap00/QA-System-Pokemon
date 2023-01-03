@@ -97,10 +97,12 @@ def get_elaborated_answer(parameter_asked, pokemon):
 
 #while(True):
 def qa(query):
-#DEBILIDAD -> QUE TIPO HACE MAS DAÑO A POKEMON
+	print()
+	#DEBILIDAD -> QUE TIPO HACE MAS DAÑO A POKEMON
 	#query = "Que ataques aprende Psyduck"
 	query = query.lower()
 	print(query)
+	print()
 	if query.lower() == '--help':
 		return"""La información disponible para cada pokemon es la siguiente:
 			Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?
@@ -125,7 +127,7 @@ def qa(query):
 		pokemon = get_pokemon(query)
 		if pokemon != None:
 			print(f"El pokemon preguntado es {pokemon}")
-			print(parameter_list)
+			#print(parameter_list)
 			#POKEMON si esta en mayus se pasa a minus
 			#Procesar texto
 			#Hacer respuestas medianamnte coherentes

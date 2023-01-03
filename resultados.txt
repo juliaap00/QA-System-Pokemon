@@ -1,0 +1,461 @@
+Introduzca una pregunta sobre pokemon
+Para ver la información o pregunta aceptadas introduzca --help.
+
+
+****************************************************************************************
+Help
+****************************************************************************************
+>>> --help
+
+--help
+
+La información disponible para cada pokemon es la siguiente:
+        1.Número Pokedex. Por ej. ¿Qué número de la Pokedex es Charizard?)
+        2.Descripción. Por ej. ¿Cuál es la descripción de Charizard?
+        3.Tipo. Por ej. ¿De qué tipo es Charizard?
+        4.Debilidades. Por ej. ¿A que es débil Charizard?
+        5.Peso. Por ej. ¿Cuánto pesa Charizard?
+        6.Altura. Por ej. ¿Cuánto mide Charizard?
+        7.Legendario. Por ej. ¿Es Charizard legendario?
+        8.Habilidades. Por ej. ¿Qué habilidades tiene Charizard?
+        9.Habilidades Ocultas. Por ej. ¿Qué habilidades ocultas tiene Charizard?
+        10.Generación. Por ej. ¿En qué generación apareció Charizard?
+        11.Hábitat. Por ej. ¿Cuál es el hábitat de Charizard?
+        13.Cadena Evolutiva. Por ej. ¿Cuál es la cadena evolutiva de Charizard?
+        14.Obtención. Por ej. ¿Cómo se obtiene a Charizard?
+        15.Ratio de captura. Por ej.  ¿Cuál es el ratio de captura de Charizard?
+        16.Movientos. Por ej. ¿Qué movimientos aprende Charizard?
+
+
+****************************************************************************************
+Número Pokedex
+****************************************************************************************
+>>> ¿Qué número de la pokedex es Charizard?
+
+¿qué número de la pokedex es charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido N_Pokedex es: 0.5594172589148985
+El número de la Pokedex del pokemon charizard es #006.
+
+----------------------------------------------------------------------------------------
+>>> ¿En qué entrada de la pokedex se encuentra Charizard?
+
+¿en qué entrada de la pokedex se encuentra charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido N_Pokedex es: 0.19313988134743967
+El número de la Pokedex del pokemon charizard es #006.
+
+----------------------------------------------------------------------------------------
+>>> ¿Con que número se puede identificar a Charizard?
+
+¿con que número se puede identificar a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Movimientos es: 0.13363674856577634
+El pokemon charizard puede aprender los siguientes movimientos Ataque ala, Envite ígneo, Onda ígnea, Garra dragón, Garra umbría, Tajo aéreo, Arañazo, Gruñido, Ascuas, Malicioso, Pantalla de humo, Garra metal, Furia dragón, Furia, Cara susto, Colmillo ígneo, Pirotecnia, Cuchillada, Lanzallamas, Giro fuego, Infierno.
+
+
+****************************************************************************************
+Descripcion
+****************************************************************************************
+>>> ¿Cómo se puede describir a Charizard?
+
+¿cómo se puede describir a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido N_Pokedex es: 0.11019113134842312
+El número de la Pokedex del pokemon charizard es #006.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cómo está descrito Charizard en la pokedex?
+
+¿cómo está descrito charizard en la pokedex?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido N_Pokedex es: 0.12508900553410138
+El número de la Pokedex del pokemon charizard es #006.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cómo es Charizard?
+
+¿cómo es charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Descripcion es: 0.22639617558680913
+La descripción del pokemon charizard es Escupe fuego tan caliente que funde las rocas. Causa incendios forestales sin querer..
+
+
+****************************************************************************************
+Tipo
+****************************************************************************************
+>>> ¿Cuál es el tipo de Charizard?
+
+¿cuál es el tipo de charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habitat es: 0.2591740730623404
+El pokemon charizard habita en Montaña.
+
+----------------------------------------------------------------------------------------
+>>> ¿Qué tipo potencia Charizard?
+
+¿qué tipo potencia charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Tipo es: 0.15442291253233453
+El tipo del pokemon charizard es Fuego, Volador.
+
+----------------------------------------------------------------------------------------
+>>> ¿Con que tipo hace más daño Charizard?
+
+¿con que tipo hace más daño charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Tipo es: 0.3663523706341021
+El tipo del pokemon charizard es Fuego, Volador.
+
+
+****************************************************************************************
+Debilidades
+****************************************************************************************
+>>> ¿Qué afecta mucho a Charizard?
+
+¿qué afecta mucho a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Debilidades es: 0.11203230909208585
+El pokemon charizard es débil a Agua, Eléctrico, Roca.
+
+----------------------------------------------------------------------------------------
+>>> ¿Con que se debilita a Charizard?
+
+¿con que se debilita a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Movimientos es: 0.0994043823829712
+El pokemon charizard puede aprender los siguientes movimientos Ataque ala, Envite ígneo, Onda ígnea, Garra dragón, Garra umbría, Tajo aéreo, Arañazo, Gruñido, Ascuas, Malicioso, Pantalla de humo, Garra metal, Furia dragón, Furia, Cara susto, Colmillo ígneo, Pirotecnia, Cuchillada, Lanzallamas, Giro fuego, Infierno.
+
+----------------------------------------------------------------------------------------
+>>> ¿Que evita Charizard para no herirse?
+
+¿que evita charizard para no herirse?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Debilidades es: 0.037367203257707426
+El pokemon charizard es débil a Agua, Eléctrico, Roca.
+
+
+****************************************************************************************
+Peso
+****************************************************************************************
+>>> ¿Cuánto pesa Charizard?
+
+¿cuánto pesa charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Peso es: 0.284362346147683
+El pokemon charizard pesa 90,5 kg kg.
+
+----------------------------------------------------------------------------------------
+>>> ¿Es Charizard pesado?
+
+¿es charizard pesado?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Peso es: 0.08313676684439887
+El pokemon charizard pesa 90,5 kg kg.
+
+
+****************************************************************************************
+Altura
+****************************************************************************************
+>>> ¿Cuan alto es Charizard?
+
+¿cuan alto es charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Altura es: 0.11440762872144952
+El pokemon charizard mide 1,7 m.
+
+----------------------------------------------------------------------------------------
+>>> ¿Es muy grande Charizard?
+
+¿es muy grande charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Altura es: 0.0970731395212299
+El pokemon charizard mide 1,7 m.
+
+
+****************************************************************************************
+Legendario
+****************************************************************************************
+>>> ¿Es Charizard un pokemon legendario?
+
+¿es charizard un pokemon legendario?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Legendario es: 0.3832342039359695
+El pokemon charizard No es legendario.
+
+----------------------------------------------------------------------------------------
+>>> ¿Es Charizard mitológico?
+
+¿es charizard mitológico?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Legendario es: 0.05655806589941714
+El pokemon charizard No es legendario.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cómo de único es Charizard?
+
+¿cómo de único es charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Peso es: 0.10934482062126832
+El pokemon charizard pesa 90,5 kg kg.
+
+
+****************************************************************************************
+Habilidades
+****************************************************************************************
+>>> ¿Tiene Charizard alguna pasiva?
+
+¿tiene charizard alguna pasiva?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habilidades es: 0.06505101818250147
+Las habilidades del pokemon charizard son Mar llamas.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cuáles son las habilidades de Charizard?
+
+¿cuáles son las habilidades de charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Cadena_Evolutiva es: 0.2635299398364974
+La cadena evolutiva del pokemon charizard es Charmander, Charmeleon, Charizard.
+
+----------------------------------------------------------------------------------------
+>>> ¿Qué características son propias de Charizard?
+
+¿qué características son propias de charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habilidades es: 0.13027783552813121
+Las habilidades del pokemon charizard son Mar llamas.
+
+
+****************************************************************************************
+Habilidades ocultas
+****************************************************************************************
+>>> ¿Qué habilidades dificiles de conseguir tiene Charizard?
+
+¿qué habilidades dificiles de conseguir tiene charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habilidad_Oculta es: 0.18493155941213232
+La habilidad oculta del pokemon charizard son Poder solar.
+
+----------------------------------------------------------------------------------------
+>>> ¿Tiene algunas habilidades especiales Charizard ?
+
+¿tiene algunas habilidades especiales charizard ?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habilidad_Oculta es: 0.3019249297959991
+La habilidad oculta del pokemon charizard son Poder solar.
+
+----------------------------------------------------------------------------------------
+>>> ¿Qué características ocultas tiene Charizard?
+
+¿qué características ocultas tiene charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habilidades es: 0.2947527667127225
+Las habilidades del pokemon charizard son Mar llamas.
+
+
+****************************************************************************************
+Generación
+****************************************************************************************
+>>> ¿Cuándo apareció Charizard?
+
+¿cuándo apareció charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Generacion es: 0.06325041229263574
+El pokemon charizard es de la generación Primera Generación, Pokemon Rojo/Azul.
+
+----------------------------------------------------------------------------------------
+>>> ¿En qué generación se introdujo a Charizard?
+
+¿en qué generación se introdujo a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Generacion es: 0.18178010859079133
+El pokemon charizard es de la generación Primera Generación, Pokemon Rojo/Azul.
+
+----------------------------------------------------------------------------------------
+>>> ¿En qué juego apareció Charizard?
+
+¿en qué juego apareció charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Generacion es: 0.2665847587760524
+El pokemon charizard es de la generación Primera Generación, Pokemon Rojo/Azul.
+
+
+****************************************************************************************
+Habitat
+****************************************************************************************
+>>> ¿Dónde vive el pokemon Charizard?
+
+¿dónde vive el pokemon charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habitat es: 0.35834886601804944
+El pokemon charizard habita en Montaña.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cuál es el hábitat de los pokemon como Charizard?
+
+¿cuál es el hábitat de los pokemon como charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habitat es: 0.4255783599637643
+El pokemon charizard habita en Montaña.
+
+----------------------------------------------------------------------------------------
+>>> ¿Dónde nacen y viven los Charizard?
+
+¿dónde nacen y viven los charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Habitat es: 0.05595206870948133
+El pokemon charizard habita en Montaña.
+
+
+****************************************************************************************
+Cadena evolutiva
+****************************************************************************************
+>>> ¿Tiene alguna evolución Charizard?
+
+¿tiene alguna evolución charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Cadena_Evolutiva es: 0.05244215932726791
+La cadena evolutiva del pokemon charizard es Charmander, Charmeleon, Charizard.
+
+----------------------------------------------------------------------------------------
+>>> ¿Que preevoluciones tiene Charizard?
+
+¿que preevoluciones tiene charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Debilidades es: 0.06471542634748659
+El pokemon charizard es débil a Agua, Eléctrico, Roca.
+
+----------------------------------------------------------------------------------------
+>>> ¿Que cadena evolutiva tiene Charizard?
+
+¿que cadena evolutiva tiene charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Cadena_Evolutiva es: 0.10306848303414302
+La cadena evolutiva del pokemon charizard es Charmander, Charmeleon, Charizard.
+
+
+****************************************************************************************
+Obtención
+****************************************************************************************
+>>> ¿Dónde se obtiene a Charizard?
+
+¿dónde se obtiene a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Obtencion es: 0.1904549254565459
+El pokemon charizard se obtiene Evolucionar de Charmeleon (nivel 36).
+
+----------------------------------------------------------------------------------------
+>>> ¿Como capturar a Charizard?
+
+¿como capturar a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Ratio_de_Captura es: 0.12603089232126158
+El pokemon charizard tiene una probabilidad Medio de captura.
+
+----------------------------------------------------------------------------------------
+>>> ¿Dónde se puede conseguir a Charizard?
+
+¿dónde se puede conseguir a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Obtencion es: 0.13794604037227406
+El pokemon charizard se obtiene Evolucionar de Charmeleon (nivel 36).
+
+
+****************************************************************************************
+Ratio de captura
+****************************************************************************************
+>>> ¿Qué valor tiene el ratio de captura de Charizard?
+
+¿qué valor tiene el ratio de captura de charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Ratio_de_Captura es: 0.30262498169109253
+El pokemon charizard tiene una probabilidad Medio de captura.
+
+----------------------------------------------------------------------------------------
+>>> ¿Como de difícil es capturar a Charizard?
+
+¿como de difícil es capturar a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Ratio_de_Captura es: 0.2925015188460066
+El pokemon charizard tiene una probabilidad Medio de captura.
+
+----------------------------------------------------------------------------------------
+>>> ¿Es muy probable capturar a Charizard?
+
+¿es muy probable capturar a charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Ratio_de_Captura es: 0.20372255802201644
+El pokemon charizard tiene una probabilidad Medio de captura.
+
+
+****************************************************************************************
+Movimientos
+****************************************************************************************
+>>> ¿Cuáles son los ataques que aprende Charizard?
+
+¿cuáles son los ataques que aprende charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Movimientos es: 0.08225865936879936
+El pokemon charizard puede aprender los siguientes movimientos Ataque ala, Envite ígneo, Onda ígnea, Garra dragón, Garra umbría, Tajo aéreo, Arañazo, Gruñido, Ascuas, Malicioso, Pantalla de humo, Garra metal, Furia dragón, Furia, Cara susto, Colmillo ígneo, Pirotecnia, Cuchillada, Lanzallamas, Giro fuego, Infierno.
+
+----------------------------------------------------------------------------------------
+>>> ¿Que movimientos puede hacer Charizard?
+
+¿que movimientos puede hacer charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Movimientos es: 0.11646193912324439
+El pokemon charizard puede aprender los siguientes movimientos Ataque ala, Envite ígneo, Onda ígnea, Garra dragón, Garra umbría, Tajo aéreo, Arañazo, Gruñido, Ascuas, Malicioso, Pantalla de humo, Garra metal, Furia dragón, Furia, Cara susto, Colmillo ígneo, Pirotecnia, Cuchillada, Lanzallamas, Giro fuego, Infierno.
+
+----------------------------------------------------------------------------------------
+>>> ¿Cuáles son los movimientos que puede aprender Charizard?
+
+¿cuáles son los movimientos que puede aprender charizard?
+
+El pokemon preguntado es charizard
+La similaridad de la pregunta con el parámetro escogido Cadena_Evolutiva es: 0.06890965970829264
+La cadena evolutiva del pokemon charizard es Charmander, Charmeleon, Charizard.
+
+----------------------------------------------------------------------------------------
