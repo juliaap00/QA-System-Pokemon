@@ -14,4 +14,4 @@ pip install openpyxl
 
 pip install levenshtein
 
-pip install sklearn
+pip install -U scikit-learn
