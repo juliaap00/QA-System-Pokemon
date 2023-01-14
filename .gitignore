@@ -2,3 +2,5 @@ __pycache__
 model.py
 *.ipynb
 ~$Pokemons.xlsx
+try.py
+lemmatizer.py

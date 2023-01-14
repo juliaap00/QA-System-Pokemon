@@ -36,7 +36,7 @@
         margin: auto;
         margin-top: 10%;
         position: relative;
-        width: fit-content; 
+        width: 40%; 
       	height: fit-content;
       }
       .blue-subdiv{
@@ -129,9 +129,9 @@
         <p style="color: white ; float:  center">Introduzca una pregunta sobre un Pok&eacute;mon </p>
       </div>
       <div style=" margin-top:  25%; width:   100%; height: 100%"> 
-      <p style="margin-left:5%;">Para ver la informaci&oacute;n o pregunta aceptadas introduzca --help.</p>
-         <form style="width: 90%; height: 25%; width: fit-content; height: fit-content;" onsubmit="return false">
-            <input style="width: fit-content; height: fit-content;" type="text" id="pokemon-input" name="question"/>
+      <p style="margin-left:5%; margin-bottom: 5%">Para ver la informaci&oacute;n o pregunta aceptadas introduzca --help.</p>
+         <form style="width: 90%; height: 25%;" onsubmit="return false">
+            <input style="width: fit-content; height: fit-content;, margin-top: 30%;" type="text" id="pokemon-input" name="question"/>
             <button onclick="sendRequest()" class="button" style="width: fit-content; height: fit-content"; type="text" id="pokemon-button">Preguntar</button>
           </form>
       </div>
@@ -154,9 +154,9 @@
         xhr.onload = function() {
 
           // Update the response element with the server's response
-          if (document.getElementById('pokemon-input').value == "--help"){
+          if (question == "--help"){
+          	console.log(this.responseText)
           	 var list = parseStringToList(this.responseText, document.getElementById('response'));
-					
           	}else {
           		document.getElementById('response').innerHTML = this.responseText;
           	}
@@ -175,6 +175,7 @@
 
 	     function parseStringToList(string, targetElement) {
     // Split the string into an array of items
+
     var items = string.split('\n');
     console.log(items)
     // Create a new <ul> element

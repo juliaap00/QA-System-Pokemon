@@ -17,7 +17,7 @@ def calculate_similarity(sentence1, sentence2):
 	return similarity * (1 - distance_calculated / max(len(sentence1), len(sentence2)))
 
 
-def calculate_similarity2(sentence1, sentence2):
+def calculate_similarity2(sentence1, sentence2, similarity):
   # Calculate the Levenshtein distance between the sentences
   distance_calculated = distance(sentence1, sentence2)
 
@@ -25,5 +25,5 @@ def calculate_similarity2(sentence1, sentence2):
   max_length = max(len(sentence1), len(sentence2))
 
   # Return a measure of similarity based on the distance
-  return 1 - (distance_calculated / max_length)
+  return similarity * (1 - (distance_calculated / max_length))
 

@@ -10,14 +10,29 @@ from queries_database import queries_df, parameter_list, queries_dict
 from pokemon_database import pokemons as pokemons
 from tf_idf import calculate_similarity,calculate_similarity2
 
+import unicodedata
+
+def remove_accents(string):
+    # Make a translation table to remove the accents
+    table = str.maketrans("", "", "áéíóúñÁÉÍÓÚÑ")
+
+    # Use the translation table to remove the accents
+    stripped_string = string.translate(table)
+
+    # Normalize the string to NFC form
+    normalized_string = unicodedata.normalize("NFC", stripped_string)
+
+    return normalized_string
+
 
 def define_parameter_asked(query):
 	similarity = -1
 	parameter_asked = ''
 	for parameter in parameter_list:
 		for sample_query in queries_dict[parameter]:
+			sample_query =  remove_accents(sample_query)
 			similarity_aux = calculate_similarity(query, sample_query)
-			similarity_aux1 = calculate_similarity2(query, sample_query)
+			#similarity_aux1 = calculate_similarity2(query, sample_query)
 
 
 			#print(f"Similarity: {similarity_aux}, in {parameter}")
@@ -124,6 +139,7 @@ def qa(query):
 
 	else:
 		#remove puntcuation
+		query = remove_accents(query)
 		pokemon = get_pokemon(query)
 		if pokemon != None:
 			print(f"El pokemon preguntado es {pokemon}")
