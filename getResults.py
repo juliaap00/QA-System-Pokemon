@@ -1,6 +1,6 @@
 from pokemon_qa import qa
 
-queries = ["¿Qué número de la pokedex es Charizard?"
+'''queries = ["¿Qué número de la pokedex es Charizard?"
 		,"¿En qué entrada de la pokedex se encuentra Charizard?"
 		,"¿Con que número se puede identificar a Charizard?"
 		,"¿Cómo se puede describir a Charizard?"
@@ -44,6 +44,13 @@ queries = ["¿Qué número de la pokedex es Charizard?"
 		,"¿Que movimientos puede hacer Charizard?"
 		,"¿Cuáles son los movimientos que puede aprender Charizard?"
 		]
+'''
+
+queries = ["¿Cuánto pesa Charizard?",
+"Como de pesado es Charizard",
+"¿Cuántos kilos pesa Charizard?",
+"Cual es el peso de Charizard",
+"Como de pesado es Charizard"]
 
 for query in queries:
 	print(">>>", query)

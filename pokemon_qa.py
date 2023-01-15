@@ -53,11 +53,11 @@ def get_pokemon(question):
 def get_answer(parameter_asked, pokemon):
 	if parameter_asked == 'Ratio_de_Captura':
 		if pokemons[pokemon][parameter_asked] >= 20:
-			return 'Medio'
+			return 'media'
 		elif pokemons[pokemon][parameter_asked] >= 100:
-			return 'Alto'
+			return 'alta'
 		else: 
-			return 'Bajo'
+			return 'baja'
 	return pokemons[pokemon][parameter_asked]
 
 
@@ -76,7 +76,7 @@ def get_elaborated_answer(parameter_asked, pokemon):
 		return f"El pokemon {pokemon} es débil a {simply_answer}."
 	if parameter_asked == 'Peso':
 		simply_answer = get_answer(parameter_asked, pokemon)
-		return f"El pokemon {pokemon} pesa {simply_answer} kg."
+		return f"El pokemon {pokemon} pesa {simply_answer}."
 	if parameter_asked == 'Altura':
 		simply_answer = get_answer(parameter_asked, pokemon)
 		return f"El pokemon {pokemon} mide {simply_answer}."
@@ -85,10 +85,10 @@ def get_elaborated_answer(parameter_asked, pokemon):
 		return f"El pokemon {pokemon} {simply_answer} es legendario."
 	if parameter_asked == 'Habilidades':
 		simply_answer = get_answer(parameter_asked, pokemon)
-		return f"Las habilidades del pokemon {pokemon} son {simply_answer}."
+		return f"Las habilidades del pokemon {pokemon}: {simply_answer}."
 	if parameter_asked == 'Habilidad_Oculta':
 		simply_answer = get_answer(parameter_asked, pokemon)
-		return f"La habilidad oculta del pokemon {pokemon} son {simply_answer}."
+		return f"La habilidad oculta del pokemon {pokemon}: {simply_answer}."
 	if parameter_asked == 'Generacion':
 		simply_answer = get_answer(parameter_asked, pokemon)
 		return f"El pokemon {pokemon} es de la generación {simply_answer}."
