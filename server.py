@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask import Flask,jsonify,request, render_template, make_response
-from pokemon_qa import qa
+from modules.utils.pokemon_qa import qa
 
 # Initialize the Flask app
 app = Flask(__name__)

@@ -1,5 +1,5 @@
 import pandas as pd 
-queries_path = "./Preguntas.xlsx"
+queries_path = "./modules/utils/Database/Preguntas.xlsx"
 
 queries_df = pd.read_excel(queries_path, index_col=0)
 queries_df = queries_df.to_dict('index')
